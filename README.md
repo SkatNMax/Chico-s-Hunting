@@ -1,1 +1,1 @@
-# Ninja-Man
+# Ninja_Man
