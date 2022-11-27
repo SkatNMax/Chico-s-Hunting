@@ -4,15 +4,38 @@
 
 the new way to fish
 
-### Folder organisation
+### Folders organisation
 
-* /main
-  * /commons
-    * /scn
-    * /img
-    * /sound
-    * /font
-  * /levels
-  * /ui
-  * /instances
-
+```
+v0.03/
+ ├──.import/
+ ├──data/
+ ├──font/
+ ├──image/
+ │   ├──background/
+ │   │   └──terra_verde/
+ │   ├──characters/
+ │   │   ├──chico/
+ │   │   │   ├──attack/
+ │   │   │   ├──jump/
+ │   │   │   ├──jump_attack/
+ │   │   │   ├──run/
+ │   │   │   └──stop/
+ │   │   └──trout/
+ │   │       ├──die/
+ │   │       └──swim/
+ │   ├──effects/
+ │   ├──icons/
+ │   ├──items/
+ │   │   └──potion (sample)/
+ │   └──tilesets/
+ ├──scene/
+ │   ├──instances/
+ │   ├──levels/
+ │   ├──script/
+ │   └──ui/
+ └──sound/
+     ├──ambiance/
+     ├──effect/
+     └──music/
+```
