@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sf_waso_crique.mp3-0f07f6536f77f231b07c12ea63468d1a.mp3str"
+
+[deps]
+
+source_file="res://sound/ambiance/sf_waso_crique.mp3"
+dest_files=[ "res://.import/sf_waso_crique.mp3-0f07f6536f77f231b07c12ea63468d1a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

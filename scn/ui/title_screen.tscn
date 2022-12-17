@@ -1,0 +1,87 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://font/Olive Days.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scn/ui/title_screen.gd" type="Script" id=2]
+[ext_resource path="res://font/Olive Days.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://img/characters/chico/stop/stop0001.png" type="Texture" id=4]
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0.0226481, 0.9 )
+colors = PoolColorArray( 0.667159, 0.666138, 0.796875, 1, 0.375946, 0.390863, 0.757813, 1 )
+
+[sub_resource type="GradientTexture" id=4]
+gradient = SubResource( 3 )
+width = 1024
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+outline_size = 1
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 3 )
+
+[node name="TitleScreen" type="Node"]
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="TextureGradient" type="TextureRect" parent="Control"]
+margin_top = -1024.0
+margin_right = 600.0
+rect_rotation = 90.0
+rect_pivot_offset = Vector2( 0, 1024 )
+texture = SubResource( 4 )
+expand = true
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -256.0
+margin_top = -371.0
+margin_right = 256.0
+margin_bottom = 141.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 4 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -141.0
+margin_top = -0.5
+margin_right = 141.0
+margin_bottom = 82.5
+
+[node name="Title" type="Label" parent="Control/VBoxContainer"]
+margin_right = 282.0
+margin_bottom = 31.0
+custom_fonts/font = ExtResource( 1 )
+text = "Basic Platform"
+align = 1
+valign = 1
+
+[node name="Start" type="Button" parent="Control/VBoxContainer"]
+margin_top = 35.0
+margin_right = 282.0
+margin_bottom = 57.0
+custom_fonts/font = SubResource( 1 )
+text = "Start"
+
+[node name="Quit" type="Button" parent="Control/VBoxContainer"]
+margin_top = 61.0
+margin_right = 282.0
+margin_bottom = 83.0
+custom_fonts/font = SubResource( 2 )
+text = "Quit"
+
+[connection signal="pressed" from="Control/VBoxContainer/Start" to="Control" method="_on_Start_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/Quit" to="Control" method="_on_Quit_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SF-saut_beton1.mp3-fd333bc8a5f54053227dbde269cdf3db.mp3str"
+
+[deps]
+
+source_file="res://sound/effect/SF-saut_beton1.mp3"
+dest_files=[ "res://.import/SF-saut_beton1.mp3-fd333bc8a5f54053227dbde269cdf3db.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

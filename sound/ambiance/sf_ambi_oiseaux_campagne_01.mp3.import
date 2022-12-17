@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/sf_ambi_oiseaux_campagne_01.mp3-44ef246ebedf3e93d55881139d4cdd35.mp3str"
+
+[deps]
+
+source_file="res://sound/ambiance/sf_ambi_oiseaux_campagne_01.mp3"
+dest_files=[ "res://.import/sf_ambi_oiseaux_campagne_01.mp3-44ef246ebedf3e93d55881139d4cdd35.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

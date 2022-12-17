@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SF-saut_ciment1.mp3-e0cd2fb355a13bfe4f3b1355c138332a.mp3str"
+
+[deps]
+
+source_file="res://sound/effect/SF-saut_ciment1.mp3"
+dest_files=[ "res://.import/SF-saut_ciment1.mp3-e0cd2fb355a13bfe4f3b1355c138332a.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

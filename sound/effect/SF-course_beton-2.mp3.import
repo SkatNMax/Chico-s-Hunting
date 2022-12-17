@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SF-course_beton-2.mp3-690919ce863413557b6c6be0ed302c41.mp3str"
+
+[deps]
+
+source_file="res://sound/effect/SF-course_beton-2.mp3"
+dest_files=[ "res://.import/SF-course_beton-2.mp3-690919ce863413557b6c6be0ed302c41.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://img/tilesets/terra_verde.tres" type="TileSet" id=1]
+[ext_resource path="res://scn/instances/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scn/instances/Monster.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scn/ui/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scn/instances/Champi.tscn" type="PackedScene" id=5]
+
+[node name="Main" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 0, 0, -65513, 0, 0, -65512, 0, 0, -65511, 0, 0, -65510, 0, 0, -65509, 0, 0, -65508, 0, 0, -65507, 0, 0, -65506, 0, 0, -65505, 0, 0, -65504, 0, 0, 65535, 0, 0, 32, 0, 0, 131071, 0, 0, 65568, 0, 0, 196607, 0, 0, 131088, 2, 0, 131104, 0, 0, 262143, 0, 0, 196621, 2, 0, 196623, 1, 0, 196624, 1, 0, 196625, 1, 0, 196626, 1, 0, 196627, 1, 0, 196629, 2, 0, 196632, 2, 0, 196635, 2, 0, 196640, 0, 0, 327679, 0, 0, 262155, 1, 0, 262156, 1, 0, 262157, 1, 0, 262158, 1, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 262162, 0, 0, 262163, 0, 0, 262164, 1, 0, 262165, 1, 0, 262166, 1, 0, 262167, 1, 0, 262168, 1, 0, 262169, 1, 0, 262170, 1, 0, 262171, 1, 0, 262172, 1, 0, 262173, 1, 0, 262176, 0, 0, 393215, 0, 0, 327687, 2, 0, 327712, 0, 0, 458751, 0, 0, 393218, 1, 0, 393223, 1, 0, 393248, 0, 0, 524287, 0, 0, 458760, 2, 0, 458762, 2, 0, 458780, 3, 0, 458784, 0, 0, 589823, 0, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524313, 1, 0, 524314, 1, 0, 524315, 1, 0, 524316, 1, 0, 524317, 1, 0, 524319, 1, 0, 524320, 0, 0, 655359, 0, 0, 589836, 0, 0, 589839, 2, 0, 589856, 0, 0, 720895, 0, 0, 655372, 0, 0, 655373, 1, 0, 655374, 1, 0, 655375, 1, 0, 655376, 1, 0, 655392, 0, 0, 786431, 0, 0, 720918, 2, 0, 720920, 2, 0, 720928, 0, 0, 851967, 0, 0, 786454, 1, 0, 786455, 1, 0, 786456, 1, 0, 786457, 1, 0, 786458, 1, 0, 786459, 1, 0, 786464, 0, 0, 917503, 0, 0, 851986, 2, 0, 851988, 3, 0, 851990, 0, 0, 851991, 0, 0, 851992, 0, 0, 851999, 1, 0, 852000, 0, 0, 983039, 0, 0, 917505, 3, 0, 917508, 2, 0, 917510, 2, 0, 917514, 2, 0, 917520, 1, 0, 917521, 1, 0, 917522, 1, 0, 917523, 1, 0, 917524, 1, 0, 917525, 1, 0, 917526, 0, 0, 917527, 0, 0, 917528, 0, 0, 917532, 3, 0, 917533, 3, 0, 917535, 0, 0, 917536, 0, 0, 1048575, 0, 0, 983040, 1, 0, 983041, 1, 0, 983042, 1, 0, 983043, 1, 0, 983044, 1, 0, 983045, 1, 0, 983046, 1, 0, 983047, 1, 0, 983048, 1, 0, 983049, 1, 0, 983050, 1, 0, 983051, 1, 0, 983054, 3, 0, 983056, 0, 0, 983057, 0, 0, 983058, 0, 0, 983059, 0, 0, 983060, 0, 0, 983061, 0, 0, 983062, 0, 0, 983063, 0, 0, 983064, 0, 0, 983065, 3, 0, 983067, 1, 0, 983068, 1, 0, 983069, 1, 0, 983070, 1, 0, 983071, 0, 0, 983072, 0, 0, 1114111, 0, 0, 1048576, 0, 0, 1048577, 0, 0, 1048578, 0, 0, 1048579, 0, 0, 1048580, 0, 0, 1048581, 0, 0, 1048582, 0, 0, 1048583, 0, 0, 1048584, 0, 0, 1048585, 0, 0, 1048586, 0, 0, 1048587, 0, 0, 1048588, 1, 0, 1048589, 1, 0, 1048590, 1, 0, 1048591, 1, 0, 1048592, 0, 0, 1048593, 0, 0, 1048594, 0, 0, 1048595, 0, 0, 1048596, 0, 0, 1048597, 0, 0, 1048598, 0, 0, 1048599, 0, 0, 1048600, 0, 0, 1048601, 1, 0, 1048607, 0, 0, 1048608, 0, 0, 1179647, 0, 0, 1114112, 0, 0, 1114113, 0, 0, 1114114, 0, 0, 1114115, 0, 0, 1114116, 0, 0, 1114117, 0, 0, 1114118, 0, 0, 1114119, 0, 0, 1114120, 0, 0, 1114121, 0, 0, 1114122, 0, 0, 1114123, 0, 0, 1114124, 0, 0, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 0, 0, 1114129, 0, 0, 1114130, 0, 0, 1114131, 0, 0, 1114132, 0, 0, 1114133, 0, 0, 1114134, 0, 0, 1114135, 0, 0, 1114136, 0, 0, 1114137, 0, 0, 1114139, 3, 0, 1114142, 3, 0, 1114143, 0, 0, 1114144, 0, 0, 1245183, 0, 0, 1179648, 0, 0, 1179649, 0, 0, 1179650, 0, 0, 1179651, 0, 0, 1179652, 0, 0, 1179653, 0, 0, 1179654, 0, 0, 1179655, 0, 0, 1179656, 0, 0, 1179657, 0, 0, 1179658, 0, 0, 1179659, 0, 0, 1179660, 0, 0, 1179661, 0, 0, 1179662, 0, 0, 1179663, 0, 0, 1179664, 0, 0, 1179665, 0, 0, 1179666, 0, 0, 1179667, 0, 0, 1179668, 0, 0, 1179669, 0, 0, 1179670, 0, 0, 1179671, 0, 0, 1179672, 0, 0, 1179673, 0, 0, 1179674, 1, 0, 1179675, 1, 0, 1179676, 1, 0, 1179677, 1, 0, 1179678, 1, 0, 1179679, 0, 0, 1179680, 0, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 96, 400 )
+
+[node name="Monster" parent="." instance=ExtResource( 3 )]
+position = Vector2( 624, 448 )
+
+[node name="Monster2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 584, 96 )
+
+[node name="Monster3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 936, 256 )
+
+[node name="Monster4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 944, 576 )
+
+[node name="Monster6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 968, 480 )
+
+[node name="Monster7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 472, 512 )
+
+[node name="Monster5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 488, 320 )
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
+
+[node name="Champi" parent="." instance=ExtResource( 5 )]
+position = Vector2( 424, 512 )
+
+[node name="Champi2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 912, 576 )
+
+[node name="Champi3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 440, 320 )
+
+[node name="Champi4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 80, 192 )
+
+[node name="Champi5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 840, 256 )
+
+[node name="Champi6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 560, 96 )
+
+[connection signal="haelth_gained" from="Player" to="HUD" method="_on_Player_haelth_gained"]
+[connection signal="health_depleted" from="Player" to="HUD" method="_on_Player_health_depleted"]
+[connection signal="body_entered" from="Champi" to="Player" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi" to="Champi" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi2" to="Player" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi2" to="Champi2" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi3" to="Player" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi3" to="Champi3" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi4" to="Player" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi4" to="Champi4" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi5" to="Player" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi5" to="Champi5" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi6" to="Player" method="_on_Champi_body_entered"]
+[connection signal="body_entered" from="Champi6" to="Champi6" method="_on_Champi_body_entered"]

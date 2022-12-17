@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SF-doigt-coup-vent1.mp3-d0b453baa9488feca57e1ed1a21564b2.mp3str"
+
+[deps]
+
+source_file="res://sound/effect/SF-doigt-coup-vent1.mp3"
+dest_files=[ "res://.import/SF-doigt-coup-vent1.mp3-d0b453baa9488feca57e1ed1a21564b2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

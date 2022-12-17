@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SFB-duel_epee_5.mp3-3eef266cf7e21a800106af1b85f01acc.mp3str"
+
+[deps]
+
+source_file="res://sound/effect/SFB-duel_epee_5.mp3"
+dest_files=[ "res://.import/SFB-duel_epee_5.mp3-3eef266cf7e21a800106af1b85f01acc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

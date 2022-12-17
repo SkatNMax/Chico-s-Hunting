@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ambi-campagne-1.mp3-dcf672a75016d6c288209cc6a52a7b72.mp3str"
+
+[deps]
+
+source_file="res://sound/ambiance/ambi-campagne-1.mp3"
+dest_files=[ "res://.import/ambi-campagne-1.mp3-dcf672a75016d6c288209cc6a52a7b72.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://img/icons/heart.png" type="Texture" id=1]
+[ext_resource path="res://scn/ui/HUD.gd" type="Script" id=2]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource( 2 )
+
+[node name="Border" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HealthBar" type="TextureRect" parent="Border"]
+margin_left = 50.0
+margin_top = 10.0
+margin_right = 114.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 0, 16 )
+texture = ExtResource( 1 )
+expand = true
